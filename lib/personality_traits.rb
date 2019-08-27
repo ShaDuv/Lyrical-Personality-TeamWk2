@@ -25,7 +25,3 @@ class PersonalityTraits
     end
   end
 end
-
-personalities = PersonalityTraits.new("la la la")
-
-personalities.percents["OPENNESS"]
