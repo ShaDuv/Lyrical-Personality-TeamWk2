@@ -1,4 +1,5 @@
 require 'personality_traits'
+require 'emotions'
 
 class TestsController < ApplicationController
   def personality_traits
@@ -78,5 +79,33 @@ I see it, I like it, I want it, I got it
     personality_traits = PersonalityTraits.new(lyrics)
     @percents = personality_traits.percents
     render :personality_test
+  end
+
+  def emotions
+    lyrics_string = %{
+      All the sisters of mercy, they are not departed or gone
+They were waiting for me when I thought that I just can't go on
+And they brought me their comfort and later they brought me this song
+Oh, I hope you run into them, you who've been travelling so long
+Yes, you who must leave everything that you cannot control
+It begins with your family, but soon it comes around to your soul
+Well, I've been where you're hanging, I think I can see how you're pinned
+When you're not feeling holy, your loneliness says that you've sinned
+Well, they lay down beside me, I made my confession to them
+They touched both my eyes and I touched the dew on their hem
+If your life is a leaf that the seasons tear off and condemn
+They will bind you with love that is graceful and green as a stem
+When I left they were sleeping, I hope you run into them soon
+Don't turn on the lights, you can read their address by the moon
+And you won't make me jealous if I hear that they sweetened your night
+We weren't lovers like that and besides, it would still be all right
+We weren't lovers like that and besides, it would still be all right
+    }
+    emotest = Emotions.new(lyrics_string)
+    @joy = emotest.calc_joy
+    @anger = emotest.calc_anger
+    @fear = emotest.calc_fear
+    @sadness = emotest.calc_sadness
+    render :emotions_test
   end
 end

@@ -3,7 +3,7 @@ require 'json'
 
 class Emotions
   attr_reader :scores
-  def intialize(lyrics_string)
+  def initialize(lyrics_string)
     @anger_score = 0
     @anger_count = 0
     @fear_score = 0
@@ -32,7 +32,11 @@ class Emotions
         end
       end
     end
-    @joy_score/@joy_count
+    if @joy_count != 0
+      @joy_score/@joy_count
+    else
+      "0"
+    end
   end
   def calc_anger
     @response['sentences_tone'].each do |sentence|
@@ -45,7 +49,11 @@ class Emotions
         end
       end
     end
-    @anger_score/@anger_count
+    if @anger_count != 0
+      @anger_score/@anger_count
+    else
+      "0"
+    end
   end
   def calc_fear
     @response['sentences_tone'].each do |sentence|
@@ -58,7 +66,11 @@ class Emotions
         end
       end
     end
-    @fear_score/@fear_count
+    if @fear_count != 0
+      @fear_score/@fear_count
+    else
+      "0"
+    end
   end
   def calc_sadness
     @response['sentences_tone'].each do |sentence|
@@ -71,6 +83,10 @@ class Emotions
         end
       end
     end
-    @sadness_score/@sadness_count
+    if @sadness_count != 0
+      @sadness_score/@sadness_count
+    else
+      "0"
+    end
   end
 end
