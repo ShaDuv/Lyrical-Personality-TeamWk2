@@ -1,0 +1,7 @@
+<% if @percents.any? %>
+  <% @percents.each_pair do |trait, percent| %>
+    <p> <%= trait %>: <%= percent %></p>
+  <% end %>
+ <% else %>
+  <p>No personality traits</p>
+<% end %>
