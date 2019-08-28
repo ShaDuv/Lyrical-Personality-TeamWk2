@@ -57,3 +57,5 @@ gem 'ibm_watson'
 # For obtainting lyrics in a 100% totally legitimate and legal way.
 gem 'mechanize'
 gem 'rest-client'
+gem 'webdrivers'
+gem 'watir'
