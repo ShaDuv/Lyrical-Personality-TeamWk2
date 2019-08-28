@@ -191,7 +191,6 @@ header .container .col-md-7 p {
 
 .section-1 {
   padding: 20vmin 0vmin;
-  margin: 40px;
   height: 100vh;
   background-color: linear-gradient(to bottom, #fff, #f54611)
 }
@@ -205,7 +204,7 @@ h2 {
   letter-spacing: 2px;
   background-size: cover;
   background-position: top;
-  color: white;
+  color: black;
   position: relative
 }
 
@@ -214,42 +213,60 @@ h2 {
   width: 80%;
   border-radius: 0.2em;
 }
-.search-box {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #d2d2d4;
-  height: 40px;
-  border-radius: 40px;
+form.example {
+  padding: 20px;
+}
+form.example input[type=text] {
   padding: 10px;
-}
-.search-box:hover > .search-txt {
-  width: 240px;
-  padding: 0 6px;
-}
-.search-box:hover > .search-btn {
-background: #d2d2d4;
-}
-.search-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 80%;
-  background: #d2d2d4;
-  justify-content: center;
-  align-items: center;
-}
-.search-txt {
-  border: none;
-  background: none;
-  outline: none;
+  font-size: 17px;
+  border: 1px solid grey;
   float: left;
-  padding: 0;
-  color: #616161;
-  font-size: 16px;
-  transition: 0.4s;
-  line-height: 20px;
-  width:0px;
-  text-transform: uppercase;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.load{
+  transform:translate(-50%, -50%);
+  /*change these sizes to fit into your project*/
+  width:60px;
+  height:60px;
+  margin-left: 525px;
+  padding: 168px;
+}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+
+.load :first-child{background:#2986ff;animation-delay:-1.5s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :last-child{background:#ad00ad}
+
+@keyframes spin{
+  0%,100%{transform:translate(0)}
+  25%{transform:translate(160%)}
+  50%{transform:translate(160%, 160%)}
+  75%{transform:translate(0, 160%)}
 }
 
 /*  Section 2  */
