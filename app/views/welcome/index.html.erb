@@ -71,7 +71,8 @@
     <div id="personality_results">
       <% if @personality_percents %>
         <% @personality_percents.each_pair do |trait, percent| %>
-        <p><%= trait %>: <%= percent %>%</p>
+          <p><%= trait %>: <%= percent %>%</p>
+        <% end %>
       <% end %>
     </div>
     <div class="emotion_results">
