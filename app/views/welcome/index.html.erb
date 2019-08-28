@@ -76,10 +76,12 @@
       <% end %>
     </div>
     <div class="emotion_results">
-      <p> Joy rating <%= @joy %> </p>
-      <p> Sadness rating <%= @sadness %> </p>
-      <p> Fear rating <%= @fear %> </p>
-      <p> Anger rating <%= @anger %> </p>
+      <% if @joy %>
+        <p> Joy rating <%= @joy %> </p>
+        <p> Sadness rating <%= @sadness %> </p>
+        <p> Fear rating <%= @fear %> </p>
+        <p> Anger rating <%= @anger %> </p>
+      <% end %>
     </div>
   </div>
   <!-- section 3 -->
