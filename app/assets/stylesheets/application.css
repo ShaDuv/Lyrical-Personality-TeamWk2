@@ -14,8 +14,8 @@ section {
 }
 
 .logo {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 .navbar-brand {
@@ -192,7 +192,6 @@ header .container .col-md-7 p {
 .section-1 {
   padding: 20vmin 0vmin;
   height: 100vh;
-  background-color: linear-gradient(to bottom, #fff, #f54611)
 }
 h2 {
   text-align: center;
