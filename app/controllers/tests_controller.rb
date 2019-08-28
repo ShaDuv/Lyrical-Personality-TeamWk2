@@ -108,4 +108,11 @@ We weren't lovers like that and besides, it would still be all right
     @sadness = emotest.calc_sadness
     render :emotions_test
   end
+
+  def lyrics_finder
+    artist = 'nirvana'
+    lyrics_finder = LyricsFinder.new(artist)
+    @lyrics = lyrics_finder.lyrics
+    render :lyrics_test
+  end
 end
