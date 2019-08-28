@@ -1,0 +1,2 @@
+./usr/local/share/chruby/churby.sh
+chruby ruby-2.5.1
