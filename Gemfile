@@ -53,3 +53,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # For analysing lyrics
 gem 'ibm_watson'
+
+# For obtainting lyrics in a 100% totally legitimate and legal way.
+gem 'mechanize'
+gem 'rest-client'
