@@ -8,6 +8,9 @@ class PersonalityTraits
   attr_reader :percents # Hash for accessing the percents for each personality trait. Keys are the personality traits in all caps: "OPENNESS", Conscientiousness"CONSCIENTIOUSNESS", "EXTRAVERSION", "AGREEABLENESS" and "EMOTIONAL RANGE"
 
   def initialize(input_string)
+    while input_string.split(/\s/).count < 100 do
+      input_string += " " + input_string
+    end
     personality_insights = IBMWatson::PersonalityInsightsV3.new(
       iam_apikey: ENV['PERSONALITY_APIKEY'],
       version: "2017-10-13"
