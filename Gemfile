@@ -53,3 +53,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # For analysing lyrics
 gem 'ibm_watson'
+
+# For generating a word cloud
+gem 'jqcloud-rails'

@@ -1,0 +1,12 @@
+<h1>Word Cloud Output</h1>
+
+<script type="text/javascript">
+  var word_array =  <%= raw @tag_array.to_json %> ;
+  $(function() {
+    // When DOM is ready, select the container element and call
+    // the jQCloud method, passing the array of words as the first argument.
+    $("#example").jQCloud(word_array);
+  });
+</script>
+
+<div id="example" style="width: 550px; height: 350px;"></div>

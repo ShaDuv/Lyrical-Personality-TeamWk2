@@ -1,0 +1,7 @@
+<h1>Word Cloud Input</h1>
+
+<%= form_with(url: "/get_word_cloud_input", method: "get") do %>
+  <%= label_tag(:input_text, "Search for:") %>
+  <%= text_area_tag(:input_text) %>
+  <%= submit_tag("SUBMIT") %>
+<% end %>
