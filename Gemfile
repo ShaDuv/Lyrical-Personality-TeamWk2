@@ -36,8 +36,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # For loading API keys from .env file
   gem 'dotenv-rails'
-  gem 'rspec-rails'
-  gem 'pry'
 end
 
 group :development do
