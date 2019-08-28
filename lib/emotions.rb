@@ -35,7 +35,7 @@ class Emotions
     if @joy_count != 0
       @joy_score/@joy_count
     else
-      "0"
+      0
     end
   end
   def calc_anger
@@ -52,7 +52,7 @@ class Emotions
     if @anger_count != 0
       @anger_score/@anger_count
     else
-      "0"
+      0
     end
   end
   def calc_fear
@@ -69,7 +69,7 @@ class Emotions
     if @fear_count != 0
       @fear_score/@fear_count
     else
-      "0"
+      0
     end
   end
   def calc_sadness
@@ -86,7 +86,7 @@ class Emotions
     if @sadness_count != 0
       @sadness_score/@sadness_count
     else
-      "0"
+      0
     end
   end
 end
