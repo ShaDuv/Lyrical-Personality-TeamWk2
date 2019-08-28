@@ -1,15 +1,427 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Lobster|Open+Sans:600|Rubik|Roboto|Molle:400i|Sniglet");
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header,
+section {
+  max-width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.navbar-brand {
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #2577AE, #fff);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+
+.title {
+  font-family: 'Molle', cursive;
+  font-size: 40px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+header a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: whitesmoke;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0);
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  margin: 0;
+  padding: 3px 16px;
+  text-decoration: none;
+  display: block;
+  text-transform: uppercase;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: #9f9da1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+
+header .nav-item {
+  padding: 1.5em;
+}
+
+header .navbar-brand {
+  padding-left: 8rem;
+}
+header .nav-link:hover {
+  color: #9f9da1;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+}
+
+header .row .col-md-5 {
+  padding: 4.2vmin 1vmin;
+}
+
+header .row .col-md-5 img {
+  width: 90%;
+}
+
+header {
+  background: #ff512f;
+  /* fallback for old browsers */
+  background: var(--bggradient);
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+  font-size: 25px;
+}
+
+header .container .col-md-7 h1 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  padding: 0.1em 0em;
+}
+
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+}
+
+.macbook {
+  margin-top: 60px;
+}
+
+#primary-btn {
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: linear-gradient(white,lightgrey);
+}
+#primary-btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 .5rem 2rem rgba(0, 0, 0, .2);
+}
+
+#primary-btn:after {
+  transform: scaleX(3) scaleY(3);
+  opacity: 0;
+}
+
+#primary-btn:active {
+  transform: translateY(-20px);
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, .3ß);
+}
+.word-flip:before {
+  content: 'AGREEABLE';
+  animation: animate infinite 10s;
+  font-size: 40px;
+}
+@keyframes animate {
+  0%
+  {
+    content: 'AGREEABLE';
+  }
+  25%
+  {
+    content: 'OPENNESS';
+  }
+  50%
+  {
+    content: 'CONSCIENTIOUSNESS';
+  }
+  75%
+  {
+    content: 'EXTRAVERSION';
+  }
+  100%
+  {
+    content: 'NEUROTICISM';
+  }
+}
+
+/********** section 1 **************/
+
+.section-1 {
+  padding: 20vmin 0vmin;
+  margin: 40px;
+  height: 100vh;
+  background-color: linear-gradient(to bottom, #fff, #f54611)
+}
+h2 {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 50px;
+  margin-bottom: 60px;
+  margin-top: -76px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-size: cover;
+  background-position: top;
+  color: white;
+  position: relative
+}
+
+.section-1 .row .col-md-6 .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.2em;
+}
+.search-box {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #d2d2d4;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+background: #d2d2d4;
+}
+.search-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 80%;
+  background: #d2d2d4;
+  justify-content: center;
+  align-items: center;
+}
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #616161;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 20px;
+  width:0px;
+  text-transform: uppercase;
+}
+
+/*  Section 2  */
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  background: rgba(208, 241, 241, 0.199);
+  padding: 1.4em 2.5em;
+  font-size: 2vmin;
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+  color: var(--light-black);
+}
+
+.card-body .pricing {
+  background: rgba(208, 241, 241, 0.199);
+  border-top-right-radius: 170px;
+  border-top-left-radius: 170px;
+}
+
+.card-body .pricing > h1 {
+  font-size: 10vmin;
+  padding: 1em 0.5em;
+}
+
+/* Section 3 */
+
+.section-3 {
+  margin-top: 15vmin;
+  background: linear-gradient(to bottom, #D70358, #f069b4, #fff);
+  height: 100vh;
+}
+
+.carouselImage {
+  width: 400px;
+  height: 400px;
+  float: left;
+}
+
+.carousel-item.active {
+    display:inline-block;
+}
+
+.section-3 .col-md-12 > h1 {
+  margin-top: 35px;
+  font-family: 'Rubik', sans-serif;
+  padding: 2em 0 0.5em 0;
+  color: whitesmoke;
+  font-size: 50px;;
+  text-transform: uppercase;
+}
+
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: var(--light-gray);
+  font-size: 3vmin;
+}
+
+.section-3 p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.section-3 h3 {
+  padding-top: 50px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 40px;
+}
+
+.carousel-indicators {
+  margin-bottom: -3rem;
+}
+.carousel-indicators li {
+  background-color: grey;
+}
+
+/* Section 4 */
+.section-4 {
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff, #fff);
+}
+.section-4 .container h1 {
+  font-size: 60px;
+  font-family: 'Rubik';
+  padding-top: 130px;
+  color: black;
+}
+
+.section-4 .team {
+  padding: 8px;
+}
+
+.section-4 .card {
+  width: 22em;
+  margin-top: 10vmin;
+  background-image: url('../images/04.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.section-4 .card .card-text {
+  padding: 0.5em;
+  color: white;
+  font-size: 20px;
+}
+
+.section-4 .card-body > a {
+  font-size: 1.5em;
+}
+
+.section-4 .carousel-item {
+  padding-left: 3rem;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+/* It is Adjacent sibling combinator */
+
+footer .column i + i {
+  padding: 0 0.5em;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
+
+.carousel-item.active,
+.carousel-item-next,
+.carousel-item-prev{
+    display:block;
+}
