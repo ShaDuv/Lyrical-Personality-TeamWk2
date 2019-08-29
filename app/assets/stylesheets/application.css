@@ -266,7 +266,10 @@ form.example::after {
 }
 
 .w3-container {
-  width: 35%;
+  width: 100%;
+}
+.w3-light-grey {
+  height: 40px;
 }
 
 /*  Section 2  */
