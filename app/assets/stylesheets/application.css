@@ -272,7 +272,7 @@ form.example::after {
   height: 40px;
 }
 .search-area {
-  display: none;
+  /* display: none; */
 }
 .text-center h3 {
   font-size: 50px;
