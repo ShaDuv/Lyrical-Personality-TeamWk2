@@ -8,6 +8,7 @@ class WelcomeController < ApplicationController
   end
 
   def get_results
+    @results = true
     @artist = params[:search]
     lyrics = Lyrics.lyrics_by_artist(Lyrics.user_input_to_array(@artist))
     @personality_percents = PersonalityTraits.new(lyrics).percents
@@ -16,7 +17,6 @@ class WelcomeController < ApplicationController
     @anger = (emotions.calc_anger * 100).round(0)
     @fear = (emotions.calc_fear * 100).round(0)
     @sadness = (emotions.calc_sadness * 100).round(0)
-    @results = true
     render :index
   end
 end

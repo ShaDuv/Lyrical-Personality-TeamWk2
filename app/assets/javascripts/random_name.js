@@ -10,16 +10,19 @@
 //   }
 // });
 // console.log("something in the way");
-$(document).ready(function() {
-  $(".fa").click(function(event){
-    event.preventDefault();
-    $(".load").fadeIn();
-    var load = setTimeout(function(){loading()}, 20000);
-  });
-});
-
-function loading() {
-  $(".load").hide() ;
-  // $(".search-area").slideDown();
-  clearTimeout(load);
-};
+// $(document).ready(function() {
+//   $(".fa").on("click", function(event){
+//     event.preventDefault();
+//     $(".load").fadeIn();
+//     $(".search-area").hide()
+//     var load = setTimeout(function(){loading()}, 20000);
+//   });
+// });
+//
+// function loading() {
+//   $(".load").hide() ;
+//   $(".search-area").show()
+//   // $(".search-area").slideDown();
+//   clearTimeout(load);
+//   document.reload()
+// };
