@@ -39,8 +39,8 @@ class Lyrics
           rescue
             next
           end
-            # gather lyrics from page and format for search
-            lyrics += page.search('p').first.text.gsub(/\[.+?\]/, '').split(/(?=[A-Z])/).join(" ") + " "
+          # gather lyrics from page and format for search
+          lyrics += page.search('p').first.text.gsub(/\[.+?\]/, '').split(/(?=[A-Z])/).join(" ") + " "
         end
       end
     end
