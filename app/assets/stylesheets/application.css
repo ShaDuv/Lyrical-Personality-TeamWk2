@@ -255,18 +255,35 @@ form.example::after {
   margin-left: 525px;
   padding: 168px;
 }
-.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin .8s ease infinite}
 
-.load :first-child{background:#2986ff;animation-delay:-1.5s}
-.load :nth-child(2){background:#F63D3A;animation-delay:-1s}
-.load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+.load :first-child{background:#2986ff;animation-delay:-.6s}
+.load :nth-child(2){background:#F63D3A;animation-delay:-.4s}
+.load :nth-child(3){background:#FDA543;animation-delay:-0.2s}
 .load :last-child{background:#ad00ad}
 
 @keyframes spin{
-  0%,100%{transform:translate(0)}
-  25%{transform:translate(160%)}
-  50%{transform:translate(160%, 160%)}
-  75%{transform:translate(0, 160%)}
+
+  0%,100%{transform:translate(300%,150%)}
+  5%{transform:translate(292.658477444273%,196.352549156242%)}
+  10%{transform:translate(271.352549156242%,238.167787843871%)}
+  15%{transform:translate(238.167787843871%,271.352549156242%)}
+  20%{transform:translate(196.352549156242%,292.658477444273%)}
+  25%{transform:translate(150%,300%)}
+  30%{transform:translate(103.647450843758%,292.658477444273%)}
+  35%{transform:translate(61.832212156129%,271.352549156242%)}
+  40%{transform:translate(28.6474508437579%,238.167787843871%)}
+  45%{transform:translate(7.34152255572698%,196.352549156242%)}
+  50%{transform:translate(0%,150.%)}
+  55%{transform:translate(7.34152255572695%,103.647450843758%)}
+  60%{transform:translate(28.6474508437579%,61.832212156129%)}
+  65%{transform:translate(61.832212156129%,28.6474508437579%)}
+  70%{transform:translate(103.647450843758%,7.34152255572698%)}
+  75%{transform:translate(150.%,0%)}
+  80%{transform:translate(196.352549156242%,7.34152255572695%)}
+  85%{transform:translate(238.167787843871%,28.6474508437579%)}
+  90%{transform:translate(271.352549156242%,61.832212156129%)}
+  95%{transform:translate(292.658477444273%,103.647450843758%)}
 }
 
 /*  Section 2  */
