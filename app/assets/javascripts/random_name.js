@@ -20,6 +20,6 @@ $(document).ready(function() {
 
 function loading() {
   $(".load").hide() ;
-  $(".search-area").slideDown();
+  // $(".search-area").slideDown();
   clearTimeout(load);
 };
