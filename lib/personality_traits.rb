@@ -5,7 +5,7 @@ require("json")
 require("ibm_watson/personality_insights_v3")
 
 class PersonalityTraits
-  attr_reader :percents # Hash for accessing the percents for each personality trait. Keys are the personality traits in all caps: "OPENNESS", Conscientiousness"CONSCIENTIOUSNESS", "EXTRAVERSION", "AGREEABLENESS" and "EMOTIONAL RANGE"
+  attr_reader :percents # Hash for accessing the percents for each personality trait. Keys are the personality traits in all caps: "OPENNESS", "CONSCIENTIOUSNESS", "EXTRAVERSION", "AGREEABLENESS" and "EMOTIONAL RANGE"
 
   def initialize(input_string)
     personality_insights = IBMWatson::PersonalityInsightsV3.new(
