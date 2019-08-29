@@ -266,7 +266,7 @@ form.example::after {
 }
 
 .w3-container {
-  width: 130%;
+  width: 100%;
 }
 .w3-light-grey {
   height: 40px;
@@ -274,6 +274,11 @@ form.example::after {
 .search-area {
   /* display: none; */
 }
+
+.search-area .col-md-3 {
+  width: 25%;
+}
+
 .text-center h3 {
   font-size: 50px;
   text-align: center;
@@ -285,6 +290,7 @@ form.example::after {
   list-style: none;
   font-size: 30px;
   text-align: left;
+  margin-left: 20px;
 }
 
 #label_personalities li {
