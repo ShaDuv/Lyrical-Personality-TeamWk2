@@ -278,11 +278,19 @@ form.example::after {
   font-family: 'Rubik', sans-serif;
 }
 
+#label_emotions li {
+  padding: 10px;
+  list-style: none;
+  font-size: 30px;
+  text-align: left;
+}
+
 #label_personalities li {
   list-style: none;
-  font-size: 40px;
-  text-align: right;
-  padding-top: 3px;
+  font-size: 30px;
+  text-align: left;
+  padding-top: 15px;
+  margin-right: 5px;
 }
 
 #myBar {
