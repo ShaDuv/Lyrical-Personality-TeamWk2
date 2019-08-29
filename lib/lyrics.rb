@@ -34,7 +34,11 @@ class Lyrics
           # scrape the first result of a google search
           mechanize = Mechanize.new
           # go to genius page with lyrics
-          page = mechanize.get("https://genius.com/lyrics/#{artist}/#{track}")
+          begin
+            page = mechanize.get("https://genius.com/lyrics/#{artist}/#{track}")
+          rescue
+            next
+          end
           # gather lyrics from page and format for search
           lyrics += page.search('p').first.text.gsub(/\[.+?\]/, '').split(/(?=[A-Z])/).join(" ") + " "
         end
