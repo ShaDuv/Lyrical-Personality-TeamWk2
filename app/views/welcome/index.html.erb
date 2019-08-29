@@ -3,7 +3,7 @@
   <section class="section-1" id="search">
     <h2>Search any artist</h2>
     <div class="search-bar">
-    <form class="example" action="/action_page.php">
+    <form class="example" action="/get_results" accept-charset="UTF-8" data-remote="true" method="get">
       <input type="text" placeholder="Search.." name="search">
       <button type="submit"><i class="fa fa-search"></i></button>
     </form>
@@ -45,6 +45,24 @@
 
 
   </section>
+
+  <div id="results">
+    <div id="personality_results">
+      <% if @personality_percents %>
+        <% @personality_percents.each_pair do |trait, percent| %>
+          <p><%= trait %>: <%= percent %>%</p>
+        <% end %>
+      <% end %>
+    </div>
+    <div class="emotion_results">
+      <% if @joy %>
+        <p> Joy rating <%= @joy %> </p>
+        <p> Sadness rating <%= @sadness %> </p>
+        <p> Fear rating <%= @fear %> </p>
+        <p> Anger rating <%= @anger %> </p>
+      <% end %>
+    </div>
+  </div>
 
   <!-- section 3 -->
   <section class="section-3 container-fluid p-0 text-center" id="personalities">
