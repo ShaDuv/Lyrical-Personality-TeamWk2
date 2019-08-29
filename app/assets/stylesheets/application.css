@@ -207,28 +207,24 @@ h2 {
   position: relative
 }
 
-.section-1 .row .col-md-6 .pray img {
-  opacity: 0.8;
-  width: 80%;
-  border-radius: 0.2em;
+.search-bar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 form.example {
-  padding: 20px;
+  padding: 60px;
 }
 form.example input[type=text] {
-  padding: 10px;
   font-size: 17px;
   border: 1px solid grey;
-  float: left;
-  width: 80%;
   background: #f1f1f1;
 }
-
+/*
 form.example button {
-  float: left;
-  width: 20%;
+  width: 10%;
   padding: 10px;
-  background: #2196F3;
+  background: linear-gradient(to bottom,#7641bf, #fff);
   color: white;
   font-size: 17px;
   border: 1px solid grey;
@@ -237,14 +233,14 @@ form.example button {
 }
 
 form.example button:hover {
-  background: #0b7dda;
+  background: linear-gradient(to bottom, #fff, #7641bf);
 }
 
 form.example::after {
   content: "";
   clear: both;
   display: table;
-}
+} */
 
 .load{
   transform:translate(-50%, -50%);
@@ -253,6 +249,7 @@ form.example::after {
   height:60px;
   margin-left: 525px;
   padding: 168px;
+  display: none;
 }
 .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
 
@@ -266,6 +263,10 @@ form.example::after {
   25%{transform:translate(160%)}
   50%{transform:translate(160%, 160%)}
   75%{transform:translate(0, 160%)}
+}
+
+.w3-container {
+  width: 35%;
 }
 
 /*  Section 2  */
@@ -300,7 +301,6 @@ form.example::after {
 /* Section 3 */
 
 .section-3 {
-  margin-top: 15vmin;
   background: linear-gradient(to bottom, #D70358, #f069b4, #fff);
   height: 100vh;
 }
