@@ -97,7 +97,7 @@ header .row .col-md-5 {
 }
 
 header .row .col-md-5 img {
-  width: 90%;
+  width: 130%;
 }
 
 header {
@@ -266,10 +266,30 @@ form.example::after {
 }
 
 .w3-container {
-  width: 100%;
+  width: 130%;
 }
 .w3-light-grey {
   height: 40px;
+}
+
+.text-center h3 {
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+#label_personalities li {
+  list-style: none;
+  font-size: 40px;
+  text-align: right;
+  padding-top: 3px;
+}
+
+#myBar {
+  height: 40px;
+  border-radius: 30px;
+  text-align: left;
+  font-family: 'Rubik', sans-serif;
 }
 
 /*  Section 2  */
