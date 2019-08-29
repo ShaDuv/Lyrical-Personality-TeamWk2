@@ -271,7 +271,9 @@ form.example::after {
 .w3-light-grey {
   height: 40px;
 }
-
+.search-area {
+  display: none;
+}
 .text-center h3 {
   font-size: 50px;
   text-align: center;
@@ -293,7 +295,7 @@ form.example::after {
   margin-right: 5px;
 }
 
-#myBar {
+#myBar1, #myBar2, #myBar3, #myBar4, #myBar5, #myBar6, #myBar7, #myBar8, #myBar9 {
   height: 40px;
   border-radius: 30px;
   text-align: left;
