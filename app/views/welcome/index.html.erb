@@ -16,7 +16,7 @@
     <div class="container text-center">
       <h3>Results:</h3>
       <div class="row">
-        <div class="col-md-6" id="label_personalities">
+        <div class="col-md-3" id="label_personalities">
           <ul>
             <li>Openness</li>
             <br>
@@ -29,48 +29,77 @@
             <li>Neuroticism</li>
           </ul>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
           <% if @personality_percents %>
+          <div class=""> "this is some test text"
+
+          </div>
           <div class="w3-container">
             <!-- <button class="w3-button w3-green" onclick="move()">Click Me</button> -->
             <br>
             <div class="w3-white">
-              <div id="myBar" class="w3-container w3-purple" style= "width:<%= @personality_percents['OPENNESS']%>%"> <%= @personality_percents['OPENNESS']%>%</div>
+              <div id="myBar1" class="w3-container w3-purple" style= <%="width: #{@personality_percents['OPENNESS']}%"%>> <%= @personality_percents['OPENNESS']%>%</div>
             </div>
             <br>
             <br>
             <div class="w3-white">
-              <div id="myBar" class="w3-container w3-purple" style= "width:<%= @personality_percents['CONSCIENTIOUSNESS']%>%"> <%= @personality_percents['CONSCIENTIOUSNESS']%>%</div>
+              <div id="myBar2" class="w3-container w3-purple" style= "width:<%= @personality_percents['CONSCIENTIOUSNESS']%>%"> <%= @personality_percents['CONSCIENTIOUSNESS']%>%</div>
             </div>
             <br>
             <br>
             <div class="w3-white">
-              <div id="myBar" class="w3-container w3-purple" style= "width:<%= @personality_percents['EXTRAVERSION']%>%"> <%= @personality_percents['EXTRAVERSION']%>%</div>
+              <div id="myBar3" class="w3-container w3-purple" style= "width:<%= @personality_percents['EXTRAVERSION']%>%"> <%= @personality_percents['EXTRAVERSION']%>%</div>
             </div>
             <br>
             <br>
             <div class="w3-white">
-              <div id="myBar" class="w3-container w3-purple" style= "width:<%= @personality_percents['AGREEABLENESS']%>%"> <%= @personality_percents['AGREEABLENESS']%>%</div>
+              <div id="myBar4" class="w3-container w3-purple" style= "width:<%= @personality_percents['AGREEABLENESS']%>%"> <%= @personality_percents['AGREEABLENESS']%>%</div>
             </div>
             <br>
             <br>
             <div class="w3-white">
-              <div id="myBar" class="w3-container w3-purple" style= "width:<%= @personality_percents['EMOTIONAL RANGE']%>%"> <%= @personality_percents['EMOTIONAL RANGE']%>%</div>
+              <div id="myBar5" class="w3-container w3-purple" style= "width:<%= @personality_percents['EMOTIONAL RANGE']%>%"> <%= @personality_percents['EMOTIONAL RANGE']%>%</div>
             </div>
           </div>
           <% end %>
         </div>
-      </div>
-    </section>
+    <div class="col-md-3" id="label_emotions">
+     <ul>
+       <li>Joy</li>
+       <br>
+       <li>Saddness</li>
+       <br>
+       <li>Fear</li>
+       <br>
+       <li>Anger</li>
+     </ul>
+   </div>
+   <div class="col-md-3">
+     <div class="w3-container">
+       <br>
+         <div class="w3-white">
+           <div id="myBar6" class="w3-container w3-purple" style="width:40%">40%</div>
+         </div>
+         <br>
+         <br>
+         <div class="w3-white">
+           <div id="myBar7" class="w3-container w3-blue" style="width:50%">50%</div>
+         </div>
+         <br>
+         <br>
+         <div class="w3-white">
+           <div id="myBar8" class="w3-container w3-green" style="width:50%">50%</div>
+         </div>
+         <br>
+         <br>
+         <div class="w3-white">
+           <div id="myBar9" class="w3-container w3-yellow" style="width:70%">70%</div>
+         </div>
+       </div>
+     </div>
+    </div>
+  </section>
 
-    <div id="results">
-      <div id="personality_results">
-        <% if @personality_percents %>
-        <% @personality_percents.each_pair do |trait, percent| %>
-        <p><%= trait %>: <%= percent %>%</p>
-        <% end %>
-        <% end %>
-      </div>
       <div class="emotion_results">
         <% if @joy %>
         <p> Joy rating <%= @joy %> </p>
@@ -79,7 +108,7 @@
         <p> Anger rating <%= @anger %> </p>
         <% end %>
       </div>
-    </div>
+    
 
     <!-- section 3 -->
     <section class="section-3 container-fluid p-0 text-center" id="personalities">
