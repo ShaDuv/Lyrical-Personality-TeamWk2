@@ -43,7 +43,7 @@ _No known bugs_
 
 ## Support and contact details
 
-_Please contact us if you have any issues at: michael@epicouds.com_
+_Please contact michael@epicouds.com if you have any issues _
 
 ## Technologies Used
 
@@ -56,7 +56,7 @@ _Please contact us if you have any issues at: michael@epicouds.com_
 * GitHub
 
 ## Contributing
-This project was made by Alex Sergejev, Ben Bennett-Cauchon, Jessica Doss, Sam Cook, and Shawna Duvall at Epicodus in Portland, OR. This project was created for purely educational purposes only. If you have any questions, please contact michael@epicodus.com
+This project was made by Alex Sergejev, Ben Bennett-Cauchon, Jessica Doss, Sam Cook, and Shawna Duvall at Epicodus in Portland, OR. This project was created for purely educational purposes only. If you have any questions regarding fair use, please contact michael@epicodus.com
 
 ## Stretch Goals
 * add text field for any text the user wants to explore the tone of
